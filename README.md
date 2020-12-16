@@ -21,3 +21,13 @@ sudo mn --wifi --topo single,3 --controller=remote
 To create a linear topology with 3 stations and 3 stations, 3 access points, and a remote controller, use the following command:
 
 sudo mn --wifi --topo linear,3 --controller=remote
+
+To start the Ryu controller, use the following command:
+
+ryu-manager ryu.app.simple_switch_13
+
+To start the Pox controller, use the following command:
+
+./pox.py log.level --DEBUG forwarding.hub
+
+Use gnuplot to plot the graphs. A useful resource to learn Gnuplot is https://www.youtube.com/watch?v=lGhNL3azDRY&t=833s&ab_channel=WESHARE
